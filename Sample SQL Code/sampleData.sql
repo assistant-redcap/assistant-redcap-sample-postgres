@@ -3,7 +3,7 @@ CREATE TABLE "user" (
 	password TEXT NOT NULL,
 	name TEXT NOT NULL,
 	about_me TEXT,
-	joined DATE NOT NULL CURRENT_DATE,
+	joined DATE NOT NULL DEFAULT CURRENT_DATE,
 	is_activate BOOL NOT NULL DEFAULT TRUE
 );
 
